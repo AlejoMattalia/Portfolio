@@ -1,30 +1,30 @@
+@use 'mixinVariables.scss';
+@use 'presentacion.scss';
+@use 'sobreMi.scss';
+@use 'tecnologias.scss';
+
+
 .encabezado {
     font-family: 'Tilt Neon', cursive;
-    width: 100%;
+    width: mixinVariables.$cienPorciento;
     height: 70px;
-    background-color: #000;
+    background-color: mixinVariables.$colorNegro;
     position: fixed;
     z-index: 1;
 
     p {
-        font-size: 20px;
-        color: rgb(255, 68, 0);
+        font-size: mixinVariables.$fontSize20px;
+        color: mixinVariables.$colorNaranja;
         letter-spacing: 4px;
         position: relative;
 
         &:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: rgb(255, 68, 0);
+            @include mixinVariables.lineaNaranja();
         }
     }
 
     .contenedor--enlaces {
-        width: 100%;
+        width: mixinVariables.$cienPorciento;
 
         ul {
             padding-right: 10%;
@@ -34,20 +34,14 @@
                 list-style: none;
 
                 a {
-                    font-size: 20px;
-                    color: #fff;
+                    font-size: mixinVariables.$fontSize20px;
+                    color: mixinVariables.$colorBlanco;
                     text-decoration: none;
                     position: relative;
 
 
                     &:after {
-                        content: '';
-                        position: absolute;
-                        width: 100%;
-                        height: 2px;
-                        bottom: 0;
-                        left: 0;
-                        background-color: rgb(255, 68, 0);
+                        @include mixinVariables.lineaNaranja();
                         transform: scaleX(0);
                         transform-origin: bottom right;
                         transition: transform 0.4s ease-out;
@@ -56,137 +50,6 @@
                     &:hover:after {
                         transform: scaleX(1);
                         transform-origin: bottom left;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-.presentacion {
-    background-color: #000000;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-
-    .presentacion--palabras {
-        width: 60%;
-        height: 100%;
-
-        .presentacion__palabras--contenedor {
-            position: relative;
-            top: 180px;
-
-            span {
-                font-size: 20px;
-                color: #8d8d8d;
-            }
-
-            p {
-                position: relative;
-                top: 30px;
-                font-size: 15px;
-                color: #8d8d8d;
-            }
-
-            h1 {
-                font-size: 80px;
-                color: rgb(255, 68, 0);
-            }
-
-            h2 {
-                font-size: 40px;
-                color: #fff;
-            }
-        }
-    }
-
-    .presentacion--img {
-        img {
-            width: 600px;
-            height: 653px;
-        }
-    }
-}
-
-
-.sobreMi {
-    background-color: #e9e9e9;
-    height: 650px;
-    display: flex;
-    flex-direction: row;
-
-    .sobreMi__contenedor--imagenMia {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 150px;
-
-        .contenedor--imagenMia {
-            background-color: #fff;
-            border: #000 10px solid;
-            width: 100%;
-            height: 400px;
-
-            img {
-                height: 400px;
-                background-color: #000;
-                border: #8d8d8d 10px solid;
-                position: relative;
-                top: 15px;
-                right: 15px;
-            }
-        }
-    }
-
-    .sobreMi--escritura {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-
-        .sobreMi__contenedor--escritura {
-            width: 60%;
-
-            .sobreMi--titulo {
-                width: 100%;
-
-                h2 {
-                    font-weight: 700;
-                    color: rgb(255, 68, 0);
-                    font-size: 40px;
-                    letter-spacing: 4px;
-                }
-            }
-
-            .enlaces {
-                .enlaces--contacto {
-                    background-color:rgb(255, 89, 29);
-                    border: 2px solid rgb(255, 68, 0);
-                    margin-right: 25px;
-                    padding: 15px 30px;
-
-                    a {
-                        font-size: 17px;
-                        font-weight: 600;
-                        letter-spacing: 2px;
-                        text-decoration: none;
-                        color: #fff;
-                    }
-                }
-
-                .enlaces--cv {
-                    border: 2px solid rgb(255, 68, 0);
-                    margin-left: 25px;
-                    padding: 15px 30px;
-
-                    a{
-                        font-size: 17px;
-                        font-weight: 700;
-                        text-decoration: none;
-                        color: rgb(255, 68, 0);
                     }
                 }
             }

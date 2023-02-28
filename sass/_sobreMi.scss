@@ -1,0 +1,71 @@
+@use 'mixinVariables.scss';
+
+.sobreMi {
+    background-color: #e9e9e9;
+    height: 660px;
+    display: flex;
+    flex-direction: row;
+
+    .sobreMi__contenedor--imagenMia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+
+        img {
+            height: 400px;
+            background-color: mixinVariables.$colorNegro;
+            border: 10px solid mixinVariables.$colorGris;
+        }
+    }
+
+    .sobreMi--escritura {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        .sobreMi__contenedor--escritura {
+            width: 60%;
+
+            .sobreMi--titulo {
+                width: 100%;
+
+                h2 {
+                    font-weight: 700;
+                    color: mixinVariables.$colorNaranja;
+                    font-size: 40px;
+                    letter-spacing: 4px;
+                }
+            }
+
+            .enlaces {
+                .enlaces--contacto {
+                    @include mixinVariables.sobreMiEnlaces();
+                    background-color: mixinVariables.$colorNaranja;
+
+
+                    a {
+                        font-size: 17px;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        text-decoration: none;
+                        color: mixinVariables.$colorBlanco;
+                    }
+                }
+
+                .enlaces--cv {
+                    @include mixinVariables.sobreMiEnlaces();
+
+                    a {
+                        font-size: 17px;
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: mixinVariables.$colorNaranja;
+                    }
+                }
+            }
+        }
+    }
+}

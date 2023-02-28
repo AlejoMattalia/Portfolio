@@ -1,0 +1,47 @@
+@use 'mixinVariables.scss';
+
+.presentacion {
+    background-color: mixinVariables.$colorNegro;
+    width: mixinVariables.$cienPorciento;
+    display: flex;
+    flex-direction: row;
+
+    .presentacion--palabras {
+        width: 60%;
+        height: mixinVariables.$cienPorciento;
+
+        .presentacion__palabras--contenedor {
+            position: relative;
+            top: 180px;
+
+            span {
+                font-size: mixinVariables.$fontSize20px;
+                color: mixinVariables.$colorGris;
+            }
+
+            p {
+                position: relative;
+                top: 30px;
+                font-size: 15px;
+                color: mixinVariables.$colorGris;
+            }
+
+            h1 {
+                font-size: 80px;
+                color: mixinVariables.$colorNaranja;
+            }
+
+            h2 {
+                font-size: 40px;
+                color: mixinVariables.$colorBlanco;
+            }
+        }
+    }
+
+    .presentacion--img {
+        img {
+            width: 600px;
+            height: 653px;
+        }
+    }
+}
