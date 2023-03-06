@@ -129,6 +129,174 @@
   height: 80px;
 }
 
+.proyectosDestacados {
+  background-color: rgb(20, 20, 20);
+  height: 700px;
+}
+.proyectosDestacados h2 {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: rgb(255, 68, 0);
+  padding-top: 100px;
+  position: relative;
+}
+.proyectosDestacados h2:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 68, 0);
+}
+.proyectosDestacados .contenedor--proyectosDestacados {
+  position: relative;
+  top: 50px;
+  width: 90%;
+}
+.proyectosDestacados .contenedor--proyectosDestacados .card {
+  border: #474747 5px solid;
+}
+.proyectosDestacados .contenedor--proyectosDestacados .card .img--proyecto {
+  width: 100%;
+}
+.proyectosDestacados .contenedor--proyectosDestacados .card .img--proyecto img {
+  width: 100%;
+}
+.proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio {
+  background-color: black;
+  border-radius: 50px;
+  width: 120px;
+  border: 2px solid black;
+  transition: 0.2s;
+}
+.proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio:hover {
+  border: 2px solid black;
+  background-color: #fff;
+}
+.proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio:hover a {
+  color: black;
+}
+.proyectosDestacados .contenedor--proyectosDestacados .card .texto--codigo a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #6b6b6b;
+}
+.proyectosDestacados .contenedor--proyectosDestacados .card .texto--codigo a:hover {
+  color: #000;
+}
+
+.todosProyectos {
+  background-color: rgb(0, 0, 0);
+  height: 750px;
+}
+.todosProyectos .proyectos {
+  width: 100%;
+}
+.todosProyectos .proyectos .titulo--proyectos {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: rgb(255, 68, 0);
+  padding-top: 100px;
+  position: relative;
+}
+.todosProyectos .proyectos .titulo--proyectos:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 68, 0);
+}
+.todosProyectos .proyectos .card--proyectos {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .frente {
+  background-color: #fff;
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #bebebe;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .frente h3 {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #c0c0c0;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .frente .imagen--html {
+  position: relative;
+  top: 50px;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .frente .imagen--javascript {
+  position: relative;
+  top: 15px;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .atras {
+  transform: perspective(680px) rotateY(180deg);
+  background: rgb(54, 54, 54);
+  padding: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 5px 10px #8f8f8f;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .atras h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .atras p {
+  color: #dfdfdf;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .atras .link {
+  border-top: solid 1px #868686;
+  height: 50px;
+  line-height: 50px;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .atras .link a {
+  color: #868686;
+  text-decoration: none;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .atras .link a:hover {
+  color: #fff;
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss:hover .frente {
+  transform: perspective(600px) rotateY(180deg);
+}
+.todosProyectos .proyectos .card--proyectos .card--htmlCss:hover .atras {
+  transform: perspective(600px) rotateY(360deg);
+}
+
 .encabezado {
   font-family: "Tilt Neon", cursive;
   width: 100%;
@@ -158,17 +326,17 @@
 .encabezado .contenedor--enlaces ul {
   padding-right: 10%;
 }
-.encabezado .contenedor--enlaces ul li {
+.encabezado .contenedor--enlaces ul .li {
   display: inline-block;
   list-style: none;
 }
-.encabezado .contenedor--enlaces ul li a {
+.encabezado .contenedor--enlaces ul .li a {
   font-size: 20px;
   color: #fff;
   text-decoration: none;
   position: relative;
 }
-.encabezado .contenedor--enlaces ul li a:after {
+.encabezado .contenedor--enlaces ul .li a:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -180,9 +348,19 @@
   transform-origin: bottom right;
   transition: transform 0.4s ease-out;
 }
-.encabezado .contenedor--enlaces ul li a:hover:after {
+.encabezado .contenedor--enlaces ul .li a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.encabezado .contenedor--enlaces ul .li--sinEfecto a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.encabezado .contenedor--enlaces ul .li--sinEfecto .a--items {
+  font-size: 15px;
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -21,3 +21,17 @@ $fontSize20px: 20px;
     margin-right: 25px;
     padding: 15px 30px;
 }
+
+@mixin titulo() {
+
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: $colorNaranja;
+    padding-top: 100px;
+    position: relative;
+
+    &:after {
+        @include lineaNaranja();
+    }
+}

@@ -5,16 +5,7 @@
     height: 650px;
 
     h2 {
-        font-size: 60px;
-        font-weight: bold;
-        letter-spacing: 3px;
-        color: mixinVariables.$colorNaranja;
-        padding-top: 100px;
-        position: relative;
-
-        &:after{
-            @include mixinVariables.lineaNaranja();
-        }        
+        @include mixinVariables.titulo();      
     }
 
     .contenedor--tecnologias {

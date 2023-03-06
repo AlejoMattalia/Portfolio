@@ -2,6 +2,8 @@
 @use 'presentacion.scss';
 @use 'sobreMi.scss';
 @use 'tecnologias.scss';
+@use 'proyectos.scss';
+@use 'contacto.scss';
 
 
 .encabezado {
@@ -29,7 +31,7 @@
         ul {
             padding-right: 10%;
 
-            li {
+            .li {
                 display: inline-block;
                 list-style: none;
 
@@ -52,6 +54,21 @@
                         transform-origin: bottom left;
                     }
                 }
+            }
+
+            .li--sinEfecto{
+                a{
+                    font-size: mixinVariables.$fontSize20px;
+                    color: mixinVariables.$colorBlanco;
+                    text-decoration: none;
+                    position: relative;
+
+                }
+
+                .a--items{
+                    font-size: 15px;
+                    color: black;
+                }  
             }
         }
     }

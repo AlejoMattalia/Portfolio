@@ -26,11 +26,19 @@
 
         <div class="contenedor--enlaces d-flex justify-content-center align-items-center">
             <ul class="d-flex justify-content-center align-items-center">
-                <li class="ps-5"><a href="#presentacion">Inicio</li></a>
-                <li class="ps-5"><a href="#sobreMi">Sobre mi</li></a>
-                <li class="ps-5"><a href="#tecnologias">Tecnologías</li></a>
-                <li class="ps-5"><a href="">Proyectos</li></a>
-                <li class="ps-5"><a href="">Contactos</li></a>
+                <li class="li ps-5"><a href="#presentacion">Inicio</li></a>
+                <li class="li ps-5"><a href="#sobreMi">Sobre mi</li></a>
+                <li class="li ps-5"><a href="#tecnologias">Tecnologías</li></a>
+                <li class="li--sinEfecto dropdown ps-5">
+                    <a class=" dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Proyectos
+                    </a>
+                    <ul class="dropdown-menu mt-3">
+                        <li><a class="dropdown-item a--items" href="#proyectosDestacados">Proyectos destacados</a></li>
+                        <li><a class="dropdown-item a--items" href="#proyectos">Proyectos</a></li>
+                    </ul>
+                </li>
+                <li class="li ps-5"><a href="#contacto">Contactos</li></a>
             </ul>
         </div>
     </header>
@@ -132,6 +140,124 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+
+        <section class="proyectosDestacados d-flex flex-column align-items-center" id="proyectosDestacados">
+            <h2>PROYECTOS DESTACADOS</h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 my-3 contenedor--proyectosDestacados">
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <div class="img--proyecto">
+                            <img src="img/markamueble.PNG" alt="">
+                        </div>
+
+                        <div class="m-2 p-2 texto--sitio text-center">
+                            <a href="">Ir al sitio</a>
+                        </div>
+
+                        <div class="m-1 texto--codigo">
+                            <a href="">Ver código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <div class="img--proyecto">
+                            <img src="img/perfume.PNG" alt="">
+                        </div>
+
+                        <div class="m-2 p-2 texto--sitio text-center">
+                            <a href="">Ir al sitio</a>
+                        </div>
+
+                        <div class="m-1 texto--codigo">
+                            <a href="">Ver código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <div class="img--proyecto">
+                            <img src="img/erro404.PNG" alt="">
+                        </div>
+
+                        <div class="m-2 p-2 texto--sitio text-center">
+                            <a href="">Ir al sitio</a>
+                        </div>
+
+                        <div class="m-1 texto--codigo">
+                            <a href="">Ver código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="todosProyectos d-flex flex-column align-items-center" id="proyectos">
+
+            <div class="proyectos d-flex flex-column align-items-center text-center">
+                <h3 class="titulo--proyectos">PROYECTOS</h3>
+
+                <div class="mt-5 card--proyectos">
+                    <div class="card--htmlCss">
+                        <div class="face frente">
+                            <img src="img/htmlycss.png" alt="Imagen html" class="imagen--html">
+                            <h3>HTML y CSS</h3>
+                        </div>
+
+                        <div class="face atras">
+                            <h3>HTML y CSS</h3>
+                            <p>Los trabajos de esta sección estan realizados con html, css, bootstrap, sass, git y
+                                github</p>
+                            <div class="link">
+                                <a href="">Ver proyectos</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card--htmlCss">
+                        <div class="face frente">
+                            <img src="img/htmlcssyjavascript.jpg" alt="Imagen javascript" class="imagen--javascript">
+                            <h3>HTML, CSS y JAVASCRIPT</h3>
+                        </div>
+
+                        <div class="face atras">
+                            <h3>HTML, CSS y JAVASCRIPT</h3>
+                            <p>Los trabajos de esta sección estan realizados con html, css, javascript, bootstrap, sass,
+                                git y github</p>
+                            <div class="link">
+                                <a href="">Ver proyectos</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card--htmlCss">
+                        <div class="face frente">
+                            <img src="img/react.jpg" alt="Imagen React" class="imagen--react">
+                            <h3>HTML, CSS, JAVASCRIPT y REACT</h3>
+                        </div>
+
+                        <div class="face atras">
+                            <h3>HTML, CSS, JAVASCRIPT y REACT</h3>
+                            <p>Los trabajos de esta sección estan realizados con html, css, javascript, react,
+                                bootstrap, sass, git y github</p>
+                            <div class="link">
+                                <a href="">Ver proyectos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contacto" id="contacto">
+
         </section>
     </main>
 
