@@ -67,9 +67,15 @@
 
                 .a--items{
                     font-size: 15px;
-                    color: black;
+                    color: mixinVariables.$colorNegro;
                 }  
             }
         }
+    }
+}
+
+footer{
+    a{
+        color: mixinVariables.$colorNegro;
     }
 }

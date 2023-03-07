@@ -105,7 +105,7 @@
   font-weight: bold;
   letter-spacing: 3px;
   color: rgb(255, 68, 0);
-  padding-top: 100px;
+  padding-top: 80px;
   position: relative;
 }
 .tecnologias h2:after {
@@ -138,7 +138,7 @@
   font-weight: bold;
   letter-spacing: 3px;
   color: rgb(255, 68, 0);
-  padding-top: 100px;
+  padding-top: 80px;
   position: relative;
 }
 .proyectosDestacados h2:after {
@@ -165,23 +165,23 @@
   width: 100%;
 }
 .proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio {
-  background-color: black;
+  background-color: #000;
   border-radius: 50px;
-  width: 120px;
-  border: 2px solid black;
+  width: 180px;
+  border: 2px solid #000;
   transition: 0.2s;
 }
 .proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio a {
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: #fff;
 }
 .proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio:hover {
-  border: 2px solid black;
+  border: 2px solid #000;
   background-color: #fff;
 }
 .proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio:hover a {
-  color: black;
+  color: #000;
 }
 .proyectosDestacados .contenedor--proyectosDestacados .card .texto--codigo a {
   text-decoration: none;
@@ -193,7 +193,7 @@
 }
 
 .todosProyectos {
-  background-color: rgb(0, 0, 0);
+  background-color: #000;
   height: 750px;
 }
 .todosProyectos .proyectos {
@@ -297,6 +297,71 @@
   transform: perspective(600px) rotateY(360deg);
 }
 
+.contacto {
+  height: 700px;
+}
+.contacto h2 {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: rgb(255, 68, 0);
+  padding-top: 80px;
+  position: relative;
+}
+.contacto h2:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 68, 0);
+}
+.contacto a {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+}
+.contacto form {
+  width: 50%;
+}
+.contacto form .contenedor__contacto--formulario {
+  width: 100%;
+}
+.contacto form .contenedor__contacto--formulario .contenedor__contacto__formulario--active {
+  padding: 15px;
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 50px;
+  appearance: none;
+  color: #040404;
+  background-color: rgb(236, 236, 236);
+}
+.contacto form .contenedor__contacto--formulario .nombre {
+  margin-right: 10px;
+}
+.contacto form .contenedor__contacto--formulario .apellido {
+  margin-left: 10px;
+}
+.contacto form .contenedor__contacto--formulario .textarea {
+  border-radius: 30px;
+  height: 100px;
+}
+.contacto form .enlaces--boton {
+  background-color: rgb(255, 68, 0);
+}
+.contacto form .enlaces--boton button {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.contacto form .enlaces--boton:hover {
+  background-color: rgb(255, 86, 25);
+}
+
 .encabezado {
   font-family: "Tilt Neon", cursive;
   width: 100%;
@@ -360,7 +425,11 @@
 }
 .encabezado .contenedor--enlaces ul .li--sinEfecto .a--items {
   font-size: 15px;
-  color: black;
+  color: #000;
+}
+
+footer a {
+  color: #000;
 }
 
 /*# sourceMappingURL=styles.css.map */

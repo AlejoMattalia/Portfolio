@@ -1,0 +1,63 @@
+@use 'mixinVariables.scss';
+
+.contacto {
+    height: 700px;
+
+    h2 {
+        @include mixinVariables.titulo();
+    }
+
+    a {
+        color: red;
+        text-decoration: none;
+        font-size: mixinVariables.$fontSize20px;
+        color: mixinVariables.$colorNegro;
+    }
+
+    form {
+        width: 50%;
+
+        .contenedor__contacto--formulario {
+            width: 100%;
+
+            .contenedor__contacto__formulario--active {
+                padding: 15px;
+                width: 100%;
+                font-size: 18px;
+                border: 1px solid rgb(161, 161, 161);
+                border-radius: 50px;
+                appearance: none;
+                color: #040404;
+                background-color: rgb(236, 236, 236);
+            }
+
+            .nombre {
+                margin-right: 10px;
+            }
+
+            .apellido {
+                margin-left: 10px;
+            }
+
+            .textarea {
+                border-radius: 30px;
+                height: 100px;
+            }
+        }
+
+        .enlaces--boton {
+            background-color: mixinVariables.$colorNaranja;
+
+            button {
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                color: mixinVariables.$colorBlanco;
+            }
+
+            &:hover{
+                background-color: rgb(255, 86, 25);
+            }
+        }
+    }
+}
