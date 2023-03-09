@@ -45,3 +45,68 @@
         }
     }
 }
+
+
+
+@media (min-width: 816px) and (max-width:1115px) {
+    .presentacion {
+        .presentacion--palabras {
+            .presentacion__palabras--contenedor {
+               
+                position: relative;
+                top: 180px;
+                left: 100px;
+            }
+        }
+    
+        .presentacion--img {
+            img {
+                width: 517px;
+                height: 570px;
+            }
+        }
+    }
+}
+
+
+// @media (min-width: 500px) and (max-width:816px) {
+//     .presentacion--palabras {
+//         width: 40%;
+//         height: mixinVariables.$cienPorciento;
+
+//         .presentacion__palabras--contenedor {
+//             position: relative;
+//             top: 180px;
+//             left: 80px;
+
+//             span {
+//                 font-size: mixinVariables.$fontSize20px;
+//                 color: mixinVariables.$colorGris;
+//             }
+
+//             p {
+//                 position: relative;
+//                 top: 30px;
+//                 font-size: 15px;
+//                 color: mixinVariables.$colorGris;
+//             }
+
+//             h1 {
+//                 font-size: 80px;
+//                 color: mixinVariables.$colorNaranja;
+//             }
+
+//             h2 {
+//                 font-size: 40px;
+//                 color: mixinVariables.$colorBlanco;
+//             }
+//         }
+//     }
+
+//     .presentacion--img {
+//         img {
+//             width: 450px;
+//             height: 503px;
+//         }
+//     }
+// }

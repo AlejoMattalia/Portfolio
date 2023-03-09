@@ -5,31 +5,44 @@
 @use 'proyectos.scss';
 @use 'contacto.scss';
 
-
-.encabezado {
+header {
     font-family: 'Tilt Neon', cursive;
     width: mixinVariables.$cienPorciento;
-    height: 70px;
     background-color: mixinVariables.$colorNegro;
     position: fixed;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 10% 0 0;
 
     p {
-        font-size: mixinVariables.$fontSize20px;
-        color: mixinVariables.$colorNaranja;
+        z-index: 100;
+        font-size: 40px;
         letter-spacing: 4px;
         position: relative;
+
+        a {
+            color: mixinVariables.$colorNaranja;
+            text-decoration: none;
+        }
 
         &:after {
             @include mixinVariables.lineaNaranja();
         }
     }
 
-    .contenedor--enlaces {
-        width: mixinVariables.$cienPorciento;
+    .abrir--menu {
+        display: none;
+    }
+
+    nav {
+        .cerrar--menu {
+            display: none;
+        }
 
         ul {
-            padding-right: 10%;
+            display: flex;
 
             .li {
                 display: inline-block;
@@ -56,8 +69,10 @@
                 }
             }
 
-            .li--sinEfecto{
-                a{
+            .li--sinEfecto {
+                list-style: none;
+
+                a {
                     font-size: mixinVariables.$fontSize20px;
                     color: mixinVariables.$colorBlanco;
                     text-decoration: none;
@@ -65,17 +80,132 @@
 
                 }
 
-                .a--items{
+                .a--items {
                     font-size: 15px;
                     color: mixinVariables.$colorNegro;
-                }  
+                }
             }
         }
     }
 }
 
-footer{
-    a{
+footer {
+    a {
         color: mixinVariables.$colorNegro;
+    }
+}
+
+
+@media (min-width: 999px) and (max-width:1075px) {
+    header {
+        padding: none;
+
+        nav {
+            ul {
+                .li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+
+                .li--sinEfecto {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 682px) and (max-width:999px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        nav {
+            ul {
+                .li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+
+                .li--sinEfecto {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width:682px) {
+    header {
+        .abrir--menu {
+            display: block;
+            color: mixinVariables.$colorBlanco;
+            border: none;
+            background-color: mixinVariables.$colorNegro;
+        }
+
+        nav {
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+
+            height: 1200px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: mixinVariables.$colorNegro;
+            padding: 2rem;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+            transition: .5s;
+
+            .cerrar--menu {
+                color: mixinVariables.$colorBlanco;
+                border: none;
+                background-color: mixinVariables.$colorNegro;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 23px 52px 0 0;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                margin-top: 50%;
+                gap: 20px;
+            }
+        }
+
+        .visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width:400px){
+    header{
+        p{
+            font-size: 30px;
+        }
+        .abrir--menu{
+            margin-right: 0px;
+        }
+
+        nav{
+            .cerrar--menu{
+                margin-top: 10px;
+                margin-right: 0;
+            }
+        }
     }
 }

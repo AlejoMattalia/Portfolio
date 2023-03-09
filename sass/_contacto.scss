@@ -8,7 +8,6 @@
     }
 
     a {
-        color: red;
         text-decoration: none;
         font-size: mixinVariables.$fontSize20px;
         color: mixinVariables.$colorNegro;
@@ -18,16 +17,15 @@
         width: 50%;
 
         .contenedor__contacto--formulario {
-            width: 100%;
+            width: mixinVariables.$cienPorciento;
 
             .contenedor__contacto__formulario--active {
                 padding: 15px;
-                width: 100%;
+                width: mixinVariables.$cienPorciento;
                 font-size: 18px;
-                border: 1px solid rgb(161, 161, 161);
+                border: 3px solid rgb(161, 161, 161);
                 border-radius: 50px;
                 appearance: none;
-                color: #040404;
                 background-color: rgb(236, 236, 236);
             }
 
@@ -47,6 +45,7 @@
 
         .enlaces--boton {
             background-color: mixinVariables.$colorNaranja;
+            border-radius: 20px;
 
             button {
                 font-size: 15px;
