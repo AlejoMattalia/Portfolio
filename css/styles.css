@@ -26,6 +26,24 @@
   font-size: 80px;
   color: rgb(255, 68, 0);
 }
+.presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 span {
+  position: absolute;
+  right: -10px;
+  top: 62px;
+  height: 85px;
+  width: 0;
+  background: #000;
+  border-left: 2px solid #fff;
+  animation: animacionTitulo 5s infinite alternate;
+}
+@keyframes animacionTitulo {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
 .presentacion .presentacion--palabras .presentacion__palabras--contenedor h2 {
   font-size: 40px;
   color: #fff;
@@ -41,9 +59,180 @@
     top: 180px;
     left: 100px;
   }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 span {
+    display: none;
+  }
   .presentacion .presentacion--img img {
     width: 517px;
     height: 570px;
+  }
+}
+@media (min-width: 674px) and (max-width: 816px) {
+  .presentacion {
+    padding: 30px 0 37px 0;
+  }
+  .presentacion .presentacion--palabras {
+    width: 40%;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor {
+    position: relative;
+    top: 150px;
+    left: 80px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor span {
+    font-size: 15px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor p {
+    font-size: 13px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 {
+    font-size: 60px;
+    position: relative;
+    top: 10px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 span {
+    display: none;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h2 {
+    font-size: 30px;
+  }
+  .presentacion .presentacion--img img {
+    width: 450px;
+    height: 503px;
+  }
+}
+@media (min-width: 581px) and (max-width: 674px) {
+  .presentacion {
+    padding: 50px 0 117px 0;
+  }
+  .presentacion .presentacion--palabras {
+    width: 30%;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor {
+    position: relative;
+    top: 120px;
+    left: 50px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 {
+    font-size: 50px;
+    position: relative;
+    top: 10px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 span {
+    display: none;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h2 {
+    font-size: 25px;
+  }
+  .presentacion .presentacion--img {
+    padding-left: 50px;
+  }
+  .presentacion .presentacion--img img {
+    width: 370px;
+    height: 423px;
+  }
+}
+@media (min-width: 457px) and (max-width: 600px) {
+  .presentacion {
+    padding: 50px 0 187px 0;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor {
+    position: relative;
+    top: 80px;
+    left: 50px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 {
+    font-size: 45px;
+    position: relative;
+    top: 10px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 span {
+    display: none;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h2 {
+    font-size: 20px;
+  }
+  .presentacion .presentacion--img img {
+    width: 280px;
+    height: 333px;
+  }
+}
+@media (min-width: 400px) and (max-width: 457px) {
+  .presentacion {
+    padding: 50px 0 49% 0;
+  }
+  .presentacion .presentacion--palabras {
+    width: 30%;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor {
+    position: relative;
+    top: 90px;
+    left: 20px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor span {
+    font-size: 13px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor p {
+    font-size: 15px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 {
+    font-size: 35px;
+    position: relative;
+    top: 10px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 span {
+    display: none;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h2 {
+    font-size: 20px;
+  }
+  .presentacion .presentacion--img {
+    position: relative;
+    top: 100px;
+    left: -10px;
+  }
+  .presentacion .presentacion--img img {
+    width: 250px;
+    height: 303px;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .presentacion {
+    padding: 50px 0 82% 0;
+  }
+  .presentacion .presentacion--palabras {
+    width: 30%;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor {
+    position: relative;
+    top: 10px;
+    left: 20px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor span {
+    font-size: 13px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor p {
+    font-size: 15px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 {
+    font-size: 35px;
+    position: relative;
+    top: 10px;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h1 span {
+    display: none;
+  }
+  .presentacion .presentacion--palabras .presentacion__palabras--contenedor h2 {
+    font-size: 20px;
+  }
+  .presentacion .presentacion--img {
+    position: absolute;
+    top: 120px;
+    left: 80px;
+  }
+  .presentacion .presentacion--img img {
+    width: 260px;
+    height: 313px;
   }
 }
 .sobreMi {
@@ -56,7 +245,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 150px;
+  margin-left: 75px;
+  margin-right: 75px;
 }
 .sobreMi .sobreMi__contenedor--imagenMia img {
   height: 400px;
@@ -68,7 +258,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura {
   width: 60%;
@@ -107,6 +297,130 @@
   color: rgb(255, 68, 0);
 }
 
+@media (min-width: 1000px) and (max-width: 1324px) {
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .texto {
+    position: relative;
+    right: 50px;
+    width: 400px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--cv {
+    padding: 3px 40px;
+  }
+}
+@media (min-width: 750px) and (max-width: 1000px) {
+  .sobreMi .sobreMi--escritura {
+    width: 40%;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura {
+    width: 80%;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .sobreMi--titulo h2 {
+    font-size: 30px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .texto {
+    width: 120%;
+    font-size: 13px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces {
+    margin-left: 100px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--contacto a {
+    font-size: 13px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--cv {
+    padding: 3px 40px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--cv a {
+    font-size: 13px;
+  }
+}
+@media (min-width: 525px) and (max-width: 750px) {
+  .sobreMi {
+    height: 600px;
+  }
+  .sobreMi .sobreMi__contenedor--imagenMia {
+    margin-top: 200px;
+    height: 200px;
+  }
+  .sobreMi .sobreMi__contenedor--imagenMia img {
+    width: 182px;
+    height: 200px;
+  }
+  .sobreMi .sobreMi--escritura {
+    width: 50%;
+    margin-top: 30px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura {
+    width: 70%;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .sobreMi--titulo h2 {
+    font-size: 30px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .texto {
+    width: 120%;
+    font-size: 13px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces {
+    margin-left: 50px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--contacto {
+    padding: 15px 15px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--contacto a {
+    font-size: 13px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--cv {
+    padding: 3px 20px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--cv a {
+    font-size: 13px;
+  }
+}
+@media (min-width: 300px) and (max-width: 525px) {
+  .sobreMi {
+    height: 725px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobreMi .sobreMi__contenedor--imagenMia {
+    margin-top: 50px;
+  }
+  .sobreMi .sobreMi__contenedor--imagenMia img {
+    width: 182px;
+    height: 200px;
+  }
+  .sobreMi .sobreMi--escritura {
+    width: 80%;
+    margin-top: 30px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura {
+    width: 80%;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .sobreMi--titulo h2 {
+    font-size: 30px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .texto {
+    width: 120%;
+    font-size: 13px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces {
+    margin-left: 20px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--contacto {
+    margin-bottom: 10px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--contacto a {
+    font-size: 13px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--cv {
+    position: relative;
+    bottom: 5px;
+    padding: 3px 40px;
+  }
+  .sobreMi .sobreMi--escritura .sobreMi__contenedor--escritura .enlaces .enlaces--cv a {
+    font-size: 13px;
+  }
+}
 .tecnologias {
   background-color: #000;
   height: 650px;
@@ -140,6 +454,51 @@
   height: 80px;
 }
 
+@media (min-width: 300px) and (max-width: 650px) {
+  .tecnologias h2 {
+    font-size: 50px;
+  }
+  .tecnologias .contenedor--tecnologias h3 {
+    font-size: 15px;
+  }
+  .tecnologias .contenedor--tecnologias img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (min-width: 300px) and (max-width: 475px) {
+  .tecnologias h2 {
+    font-size: 30px;
+  }
+  .tecnologias .contenedor--tecnologias {
+    flex-direction: row !important;
+  }
+  .tecnologias .contenedor--tecnologias .htmlCssboot {
+    position: relative;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tecnologias .contenedor--tecnologias .htmlCssboot .col {
+    margin: 20px;
+  }
+  .tecnologias .contenedor--tecnologias .sassGitGithub {
+    position: relative;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tecnologias .contenedor--tecnologias .sassGitGithub .col {
+    margin: 20px;
+  }
+  .tecnologias .contenedor--tecnologias h3 {
+    font-size: 15px;
+  }
+  .tecnologias .contenedor--tecnologias img {
+    width: 60px;
+    height: 60px;
+  }
+}
 .proyectosDestacados {
   background-color: rgb(20, 20, 20);
   height: 700px;

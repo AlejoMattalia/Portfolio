@@ -10,7 +10,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 150px;
+        margin-left: 75px;
+        margin-right: 75px;
 
         img {
             height: 400px;
@@ -24,7 +25,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
 
         .sobreMi__contenedor--escritura {
             width: 60%;
@@ -63,6 +64,173 @@
                         font-weight: 700;
                         text-decoration: none;
                         color: mixinVariables.$colorNaranja;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1000px) and (max-width:1324px) {
+
+    .sobreMi {
+        .sobreMi--escritura {
+            .sobreMi__contenedor--escritura {
+                .texto{
+                    position: relative;
+                    right: 50px;
+                    width: 400px;
+                }
+                .enlaces {
+
+                    .enlaces--cv {
+                        padding: 3px 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) and (max-width:1000px){
+    .sobreMi {    
+        .sobreMi--escritura {
+            width: 40%;
+            .sobreMi__contenedor--escritura {
+                width: 80%;
+    
+                .sobreMi--titulo {
+                    h2 {
+                        font-size: 30px;
+                    }
+                }
+                
+                .texto{
+                    width: 120%;
+                    font-size: 13px
+                }
+    
+                .enlaces {
+                    margin-left: 100px;
+                    .enlaces--contacto {    
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+    
+                    .enlaces--cv {
+                        padding: 3px 40px;
+    
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 525px) and (max-width:750px){
+    .sobreMi {  
+        height: 600px;
+        .sobreMi__contenedor--imagenMia {  
+            margin-top: 200px; 
+            height: 200px;
+            img {
+                width: 182px;
+                height: 200px;
+            }
+        }
+
+        .sobreMi--escritura {
+            width: 50%;
+            margin-top: 30px;
+            .sobreMi__contenedor--escritura {
+                width: 70%;
+    
+                .sobreMi--titulo {
+                    h2 {
+                        font-size: 30px;
+                    }
+                }
+                
+                .texto{
+                    width: 120%;
+                    font-size: 13px
+                }
+    
+                .enlaces {
+                    margin-left: 50px;
+                    .enlaces--contacto {
+                        padding: 15px 15px;    
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+    
+                    .enlaces--cv {
+                        padding: 3px 20px;
+    
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width:525px){
+    .sobreMi {  
+        height: 725px;
+        flex-direction: column;
+        align-items: center;
+        .sobreMi__contenedor--imagenMia {  
+            margin-top: 50px;
+            img {
+                width: 182px;
+                height: 200px;
+            }
+        }
+
+        .sobreMi--escritura {
+            width: 80%;
+            margin-top: 30px;
+            .sobreMi__contenedor--escritura {
+                width: 80%;
+    
+                .sobreMi--titulo {
+                    h2 {
+                        font-size: 30px;
+                    }
+                }
+                
+                .texto{
+                    width: 120%;
+                    font-size: 13px
+                }
+    
+                .enlaces {
+                    margin-left: 20px;
+                    .enlaces--contacto {
+                        margin-bottom: 10px;
+                        // padding: 15px 15px;    
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+    
+                    .enlaces--cv {
+                        position: relative;
+                        bottom: 5px;
+                        padding: 3px 40px;
+    
+                        a {
+                            font-size: 13px;
+                        }
                     }
                 }
             }
