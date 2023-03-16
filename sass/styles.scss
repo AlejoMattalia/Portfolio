@@ -5,6 +5,8 @@
 @use 'proyectos.scss';
 @use 'contacto.scss';
 
+
+//Header
 header {
     font-family: 'Tilt Neon', cursive;
     width: mixinVariables.$cienPorciento;
@@ -89,6 +91,7 @@ header {
     }
 }
 
+//footer
 footer {
     a {
         color: mixinVariables.$colorNegro;
@@ -96,6 +99,7 @@ footer {
 }
 
 
+//Media header
 @media (min-width: 999px) and (max-width:1075px) {
     header {
         padding: none;
@@ -192,20 +196,33 @@ footer {
     }
 }
 
-@media (min-width: 300px) and (max-width:400px){
-    header{
-        p{
+@media (min-width: 300px) and (max-width:400px) {
+    header {
+        p {
             font-size: 30px;
         }
-        .abrir--menu{
+
+        .abrir--menu {
             margin-right: 0px;
         }
 
-        nav{
-            .cerrar--menu{
+        nav {
+            .cerrar--menu {
                 margin-top: 10px;
                 margin-right: 0;
             }
+        }
+    }
+}
+
+
+//Media footer
+@media (min-width: 300px) and (max-width:500px) {
+    .container {
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

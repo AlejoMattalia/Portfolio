@@ -1,7 +1,7 @@
 @use 'mixinVariables.scss';
 
 .contacto {
-    height: 700px;
+    height: 650px;
 
     h2 {
         @include mixinVariables.titulo();
@@ -48,15 +48,37 @@
             border-radius: 20px;
 
             button {
+                padding: 10px 0;
                 font-size: 15px;
                 font-weight: 600;
                 letter-spacing: 2px;
                 color: mixinVariables.$colorBlanco;
             }
 
-            &:hover{
+            &:hover {
                 background-color: rgb(255, 86, 25);
             }
+        }
+    }
+}
+
+
+@media (min-width: 300px) and (max-width:767px) {
+    .contacto {
+        height: 650px;
+
+        h2 {
+            @include mixinVariables.titulo();
+        }
+
+        a {
+            text-decoration: none;
+            font-size: mixinVariables.$fontSize20px;
+            color: mixinVariables.$colorNegro;
+        }
+
+        form {
+            width: 80%;
         }
     }
 }

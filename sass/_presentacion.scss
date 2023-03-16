@@ -218,13 +218,14 @@
 
 @media (min-width: 400px) and (max-width:457px) {
     .presentacion {
+        height: 570px;
         padding: 50px 0 49% 0;
         .presentacion--palabras {
             width: 30%;
             .presentacion__palabras--contenedor {
-                position: relative;
-                top: 90px;
-                left: 20px;
+                position: absolute;
+                top: 100px;
+                left: 90px;
 
                 span {
                     font-size: 13px;
@@ -251,9 +252,9 @@
         }
 
         .presentacion--img {
-            position: relative;
-            top: 100px;
-            left: -10px;
+            position: absolute;
+            top: 180px;
+            left: 90px;
             img {
                 width: 250px;
                 height: 303px;
@@ -264,13 +265,14 @@
 
 @media (min-width: 300px) and (max-width:400px) {
     .presentacion {
+        height: 570px;
         padding: 50px 0 82% 0;
         .presentacion--palabras {
             width: 30%;
             .presentacion__palabras--contenedor {
-                position: relative;
-                top: 10px;
-                left: 20px;
+                position: absolute;
+                top: 70px;
+                left: 60px;
 
                 span {
                     font-size: 13px;
@@ -297,8 +299,8 @@
 
         .presentacion--img {
            position: absolute;
-           top: 120px;
-           left: 80px;
+           top: 150px;
+           left: 60px;
             img {
                 width: 260px;
                 height: 313px;
