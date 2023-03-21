@@ -1,9 +1,10 @@
 @use 'mixinVariables.scss';
-@use 'presentacion.scss';
-@use 'sobreMi.scss';
-@use 'tecnologias.scss';
-@use 'proyectos.scss';
-@use 'contacto.scss';
+@use 'pagPrincipal/presentacion.scss';
+@use 'pagPrincipal/sobreMi.scss';
+@use 'pagPrincipal/tecnologias.scss';
+@use 'pagPrincipal/proyectos';
+@use 'pagPrincipal/contacto.scss';
+@use 'pagSecundarias/seccionProyectos.scss';
 
 
 //Header
