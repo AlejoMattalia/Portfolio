@@ -762,9 +762,6 @@
     margin: 20px;
   }
 }
-.contacto {
-  height: 650px;
-}
 .contacto h2 {
   font-size: 60px;
   font-weight: bold;
@@ -787,50 +784,8 @@
   font-size: 20px;
   color: #000;
 }
-.contacto form {
-  width: 50%;
-}
-.contacto form .contenedor__contacto--formulario {
-  width: 100%;
-}
-.contacto form .contenedor__contacto--formulario .contenedor__contacto__formulario--active {
-  padding: 15px;
-  width: 100%;
-  font-size: 18px;
-  border: 3px solid rgb(161, 161, 161);
-  border-radius: 50px;
-  appearance: none;
-  background-color: rgb(236, 236, 236);
-}
-.contacto form .contenedor__contacto--formulario .nombre {
-  margin-right: 10px;
-}
-.contacto form .contenedor__contacto--formulario .apellido {
-  margin-left: 10px;
-}
-.contacto form .contenedor__contacto--formulario .textarea {
-  border-radius: 30px;
-  height: 100px;
-}
-.contacto form .enlaces--boton {
-  background-color: rgb(255, 68, 0);
-  border-radius: 20px;
-}
-.contacto form .enlaces--boton button {
-  padding: 10px 0;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: #fff;
-}
-.contacto form .enlaces--boton:hover {
-  background-color: rgb(255, 86, 25);
-}
 
 @media (min-width: 300px) and (max-width: 767px) {
-  .contacto {
-    height: 650px;
-  }
   .contacto h2 {
     font-size: 60px;
     font-weight: bold;
@@ -852,9 +807,6 @@
     text-decoration: none;
     font-size: 20px;
     color: #000;
-  }
-  .contacto form {
-    width: 80%;
   }
 }
 .seccion--proyectos {
