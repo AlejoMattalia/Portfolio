@@ -501,140 +501,8 @@
     height: 60px;
   }
 }
-.proyectosDestacados {
-  background-color: rgb(20, 20, 20);
-  height: 700px;
-}
-.proyectosDestacados h2 {
-  font-size: 60px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  color: rgb(255, 68, 0);
-  padding-top: 80px;
-  position: relative;
-}
-.proyectosDestacados h2:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(255, 68, 0);
-}
-.proyectosDestacados .contenedor--proyectosDestacados {
-  position: relative;
-  top: 50px;
-  width: 90%;
-}
-.proyectosDestacados .contenedor--proyectosDestacados .card {
-  border: #474747 5px solid;
-}
-.proyectosDestacados .contenedor--proyectosDestacados .card .img--proyecto {
-  width: 100%;
-}
-.proyectosDestacados .contenedor--proyectosDestacados .card .img--proyecto img {
-  width: 100%;
-}
-.proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio {
-  background-color: #000;
-  border-radius: 50px;
-  width: 180px;
-  border: 2px solid #000;
-  transition: 0.2s;
-}
-.proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio a {
-  text-decoration: none;
-  letter-spacing: 3px;
-  color: #fff;
-}
-.proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio:hover {
-  border: 2px solid #000;
-  background-color: #fff;
-}
-.proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio:hover a {
-  color: #000;
-}
-.proyectosDestacados .contenedor--proyectosDestacados .card .texto--codigo a {
-  text-decoration: none;
-  font-size: 17px;
-  color: #6b6b6b;
-}
-.proyectosDestacados .contenedor--proyectosDestacados .card .texto--codigo a:hover {
-  color: #000;
-}
-
-@media (min-width: 585px) and (max-width: 825px) {
-  .proyectosDestacados {
-    background-color: rgb(20, 20, 20);
-    height: 700px;
-  }
-  .proyectosDestacados h2 {
-    font-size: 40px;
-  }
-}
-@media (min-width: 585px) and (max-width: 767px) {
-  .proyectosDestacados {
-    height: 1200px;
-  }
-  .proyectosDestacados .contenedor--proyectosDestacados {
-    width: 60%;
-  }
-}
-@media (min-width: 500px) and (max-width: 650px) {
-  .proyectosDestacados {
-    height: 1220px;
-  }
-  .proyectosDestacados h2 {
-    font-size: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-  .proyectosDestacados h2 span {
-    border-bottom: 2px solid rgb(255, 68, 0);
-  }
-  .proyectosDestacados h2:after {
-    display: none;
-  }
-  .proyectosDestacados .contenedor--proyectosDestacados {
-    width: 65%;
-  }
-  .proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio {
-    background-color: #000;
-    border-radius: 50px;
-    width: 120px;
-    border: 2px solid #000;
-    transition: 0.2s;
-  }
-}
-@media (min-width: 300px) and (max-width: 500px) {
-  .proyectosDestacados {
-    height: 1100px;
-  }
-  .proyectosDestacados h2 {
-    font-size: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-  .proyectosDestacados h2 span {
-    border-bottom: 2px solid rgb(255, 68, 0);
-  }
-  .proyectosDestacados h2:after {
-    display: none;
-  }
-  .proyectosDestacados .contenedor--proyectosDestacados {
-    width: 70%;
-  }
-  .proyectosDestacados .contenedor--proyectosDestacados .card .texto--sitio {
-    background-color: #000;
-    border-radius: 50px;
-    width: 120px;
-    border: 2px solid #000;
-    transition: 0.2s;
-  }
-}
 .todosProyectos {
-  background-color: #000;
+  background-color: rgb(20, 20, 20);
   height: 750px;
 }
 .todosProyectos .proyectos {
@@ -685,7 +553,7 @@
 }
 .todosProyectos .proyectos .card--proyectos .card--htmlCss .frente h3 {
   position: absolute;
-  bottom: 70px;
+  top: 330px;
   width: 100%;
   height: 45px;
   line-height: 45px;
@@ -697,9 +565,10 @@
   position: relative;
   top: 50px;
 }
-.todosProyectos .proyectos .card--proyectos .card--htmlCss .frente .imagen--javascript {
-  position: relative;
-  top: 15px;
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .frente img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
 .todosProyectos .proyectos .card--proyectos .card--htmlCss .atras {
   transform: perspective(680px) rotateY(180deg);
@@ -718,11 +587,17 @@
 }
 .todosProyectos .proyectos .card--proyectos .card--htmlCss .atras p {
   color: #dfdfdf;
+  position: relative;
+  bottom: 50px;
 }
 .todosProyectos .proyectos .card--proyectos .card--htmlCss .atras .link {
   border-top: solid 1px #868686;
   height: 50px;
   line-height: 50px;
+  position: relative;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .todosProyectos .proyectos .card--proyectos .card--htmlCss .atras .link a {
   color: #868686;
@@ -731,11 +606,28 @@
 .todosProyectos .proyectos .card--proyectos .card--htmlCss .atras .link a:hover {
   color: #fff;
 }
+.todosProyectos .proyectos .card--proyectos .card--htmlCss .atras .link .verCodigo {
+  position: relative;
+  bottom: 18px;
+  font-size: 20px;
+}
 .todosProyectos .proyectos .card--proyectos .card--htmlCss:hover .frente {
   transform: perspective(600px) rotateY(180deg);
 }
 .todosProyectos .proyectos .card--proyectos .card--htmlCss:hover .atras {
   transform: perspective(600px) rotateY(360deg);
+}
+.todosProyectos button {
+  background-color: rgb(255, 68, 0);
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.todosProyectos button:hover {
+  background-color: rgb(175, 47, 0);
+  color: #fff;
 }
 
 @media (min-width: 300px) and (max-width: 975px) {
@@ -753,7 +645,7 @@
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .todosProyectos {
-    height: 1380px;
+    height: 1500px;
   }
   .todosProyectos .proyectos .card--proyectos {
     flex-direction: column;
