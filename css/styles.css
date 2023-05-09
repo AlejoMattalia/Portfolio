@@ -701,10 +701,13 @@
     color: #000;
   }
 }
-.seccion--proyectos {
+body {
   background-color: #000000;
 }
-.seccion--proyectos h1 {
+body .seccion--proyectos {
+  background-color: #000000;
+}
+body .seccion--proyectos h1 {
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 3px;
@@ -712,7 +715,7 @@
   padding-top: 80px;
   position: relative;
 }
-.seccion--proyectos h1:after {
+body .seccion--proyectos h1:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -721,14 +724,14 @@
   left: 0;
   background-color: rgb(255, 68, 0);
 }
-.seccion--proyectos h4 {
+body .seccion--proyectos h4 {
   color: #fff;
 }
-.seccion--proyectos .contenedor {
+body .seccion--proyectos .contenedor {
   width: 100%;
   height: 100%;
 }
-.seccion--proyectos .contenedor .contenedor--img {
+body .seccion--proyectos .contenedor .contenedor--img {
   position: relative;
   width: 350px;
   height: 250px;
@@ -737,12 +740,12 @@
   box-shadow: 0px 10px 15px #c0c0c0;
   cursor: pointer;
 }
-.seccion--proyectos .contenedor .contenedor--img img {
+body .seccion--proyectos .contenedor .contenedor--img img {
   width: 100%;
   height: 100%;
   transition: all 0.3s ease-out;
 }
-.seccion--proyectos .contenedor .contenedor--img .capa {
+body .seccion--proyectos .contenedor .contenedor--img .capa {
   position: absolute;
   top: 0;
   width: 100%;
@@ -753,7 +756,7 @@
   visibility: hidden;
   text-align: center;
 }
-.seccion--proyectos .contenedor .contenedor--img .capa .sitio {
+body .seccion--proyectos .contenedor .contenedor--img .capa .sitio {
   text-decoration: none;
   color: #5e5e5e;
   font-weight: 700;
@@ -764,12 +767,12 @@
   margin-bottom: 150px;
   transition: all 0.3s ease-out;
 }
-.seccion--proyectos .contenedor .contenedor--img .capa .sitio:hover {
+body .seccion--proyectos .contenedor .contenedor--img .capa .sitio:hover {
   color: #000;
   border-bottom: #000 2px solid;
   border-top: #000 2px solid;
 }
-.seccion--proyectos .contenedor .contenedor--img .capa .codigo {
+body .seccion--proyectos .contenedor .contenedor--img .capa .codigo {
   font-size: 25px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -777,16 +780,25 @@
   color: #3d3d3d;
   transition: all 0.3s ease-out;
 }
-.seccion--proyectos .contenedor .contenedor--img .capa .codigo:hover {
+body .seccion--proyectos .contenedor .contenedor--img .capa .codigo:hover {
   font-size: 20px;
   color: #000;
 }
-.seccion--proyectos .contenedor .contenedor--img:hover > .capa {
+body .seccion--proyectos .contenedor .contenedor--img:hover > .capa {
   opacity: 1;
   visibility: visible;
 }
-.seccion--proyectos .contenedor .contenedor--img:hover > .capa .sitio {
+body .seccion--proyectos .contenedor .contenedor--img:hover > .capa .sitio {
   margin: 50px 0;
+}
+body footer {
+  background-color: #000000;
+}
+body footer span {
+  color: #fff;
+}
+body footer a {
+  color: #fff;
 }
 
 @media (min-width: 683px) and (max-width: 1000px) {

@@ -1,97 +1,112 @@
 @use '../mixinVariables.scss';
 
-.seccion--proyectos {
+body {
     background-color: #000000;
 
-
-    h1 {
-        @include mixinVariables.titulo();
-    }
-
-    h4 {
-        color: #fff;
-    }
+    .seccion--proyectos {
+        background-color: #000000;
 
 
-    .contenedor {
-        width: mixinVariables.$cienPorciento;
-        height: 100%;
+        h1 {
+            @include mixinVariables.titulo();
+        }
 
-        .contenedor--img {
-            position: relative;
-            width: 350px;
-            height: 250px;
-            overflow: hidden;
-            border-radius: 5px;
-            box-shadow: 0px 10px 15px #c0c0c0;
-            cursor: pointer;
+        h4 {
+            color: #fff;
+        }
 
-            img {
-                width: mixinVariables.$cienPorciento;
-                height: mixinVariables.$cienPorciento;
-                transition: mixinVariables.$transition;
-            }
 
-            .capa {
-                position: absolute;
-                top: 0;
-                width: mixinVariables.$cienPorciento;
-                height: mixinVariables.$cienPorciento;
-                background: rgba(224, 224, 224, 0.9);
-                transition: mixinVariables.$transition;
-                opacity: 0;
-                visibility: hidden;
-                text-align: center;
+        .contenedor {
+            width: mixinVariables.$cienPorciento;
+            height: 100%;
 
-                .sitio {
-                    text-decoration: none;
-                    color: #5e5e5e;
-                    font-weight: 700;
-                    letter-spacing: 3px;
-                    font-size: 40px;
-                    border-bottom: mixinVariables.$colorGris 2px solid;
-                    border-top: mixinVariables.$colorGris 2px solid;
-                    margin-bottom: 150px;
+            .contenedor--img {
+                position: relative;
+                width: 350px;
+                height: 250px;
+                overflow: hidden;
+                border-radius: 5px;
+                box-shadow: 0px 10px 15px #c0c0c0;
+                cursor: pointer;
+
+                img {
+                    width: mixinVariables.$cienPorciento;
+                    height: mixinVariables.$cienPorciento;
                     transition: mixinVariables.$transition;
-
-                    &:hover {
-                        color: mixinVariables.$colorNegro;
-                        border-bottom: mixinVariables.$colorNegro 2px solid;
-                        border-top: mixinVariables.$colorNegro 2px solid;
-                    }
                 }
 
-                .codigo {
-                    font-size: 25px;
-                    font-weight: 700;
-                    letter-spacing: 1px;
-                    text-decoration: none;
-                    color: #3d3d3d;
+                .capa {
+                    position: absolute;
+                    top: 0;
+                    width: mixinVariables.$cienPorciento;
+                    height: mixinVariables.$cienPorciento;
+                    background: rgba(224, 224, 224, 0.9);
                     transition: mixinVariables.$transition;
+                    opacity: 0;
+                    visibility: hidden;
+                    text-align: center;
 
-                    &:hover {
-                        font-size: mixinVariables.$fontSize20px;
-                        color: mixinVariables.$colorNegro;
+                    .sitio {
+                        text-decoration: none;
+                        color: #5e5e5e;
+                        font-weight: 700;
+                        letter-spacing: 3px;
+                        font-size: 40px;
+                        border-bottom: mixinVariables.$colorGris 2px solid;
+                        border-top: mixinVariables.$colorGris 2px solid;
+                        margin-bottom: 150px;
+                        transition: mixinVariables.$transition;
+
+                        &:hover {
+                            color: mixinVariables.$colorNegro;
+                            border-bottom: mixinVariables.$colorNegro 2px solid;
+                            border-top: mixinVariables.$colorNegro 2px solid;
+                        }
                     }
+
+                    .codigo {
+                        font-size: 25px;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                        color: #3d3d3d;
+                        transition: mixinVariables.$transition;
+
+                        &:hover {
+                            font-size: mixinVariables.$fontSize20px;
+                            color: mixinVariables.$colorNegro;
+                        }
+                    }
+
                 }
 
-            }
+                &:hover>.capa {
+                    opacity: 1;
+                    visibility: visible;
 
-            &:hover>.capa {
-                opacity: 1;
-                visibility: visible;
-
-                .sitio {
-                    margin: 50px 0;
+                    .sitio {
+                        margin: 50px 0;
+                    }
                 }
             }
         }
     }
+
+    footer {
+        background-color: #000000;
+        
+        span{
+            color: #fff;
+        }
+
+        a{
+            color: #fff;
+        }
+    }
 }
 
-
-@media (min-width:683px) and (max-width: 1000px){
-    .encabezado--seccion--proyectos{
+@media (min-width:683px) and (max-width: 1000px) {
+    .encabezado--seccion--proyectos {
         flex-direction: row;
 
         nav {
@@ -100,7 +115,9 @@
                     a {
                         font-size: 14px;
                     }
-                }}}
+                }
+            }
+        }
     }
 }
 
@@ -116,7 +133,7 @@
                 height: 350px;
 
                 .capa {
-                   .sitio { 
+                    .sitio {
                         margin-bottom: 0px;
                     }
 
@@ -135,9 +152,10 @@
 @media (min-width:375px) and (max-width: 525px) {
     .seccion--proyectos {
 
-        h4{
+        h4 {
             font-size: 18px;
         }
+
         .contenedor {
             display: flex;
             flex-direction: column;
@@ -148,7 +166,7 @@
                 height: 250px;
 
                 .capa {
-                   .sitio { 
+                    .sitio {
                         margin-bottom: 0px;
                     }
 
@@ -166,9 +184,10 @@
 
 @media (min-width:300px) and (max-width: 375px) {
     .seccion--proyectos {
-        h4{
+        h4 {
             font-size: 18px;
         }
+
         .contenedor {
             display: flex;
             flex-direction: column;
@@ -179,7 +198,7 @@
                 height: 175px;
 
                 .capa {
-                   .sitio { 
+                    .sitio {
                         margin-bottom: 0px;
                     }
 
