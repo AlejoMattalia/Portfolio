@@ -1,6 +1,6 @@
 @use '../mixinVariables.scss';
 
-.todosProyectos {    
+.todosProyectos {
     background-color: rgb(20, 20, 20);
     height: 750px;
 
@@ -64,7 +64,7 @@
                         top: 50px;
                     }
 
-                    img{
+                    img {
                         width: 100%;
                         height: 80%;
                         object-fit: cover;
@@ -111,7 +111,7 @@
                             }
                         }
 
-                        .verCodigo{
+                        .verCodigo {
                             position: relative;
                             bottom: 18px;
                             font-size: 20px;
@@ -134,16 +134,18 @@
         }
     }
 
-    button{
+    button {
         background-color: rgb(255, 68, 0);
+        border: 2px solid rgb(255, 68, 0);
         color: #fff;
         border-radius: 20px;
         margin-top: 60px;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 600;
 
-        &:hover{
-            background-color: rgb(175, 47, 0);
+        &:hover {
+            border: 2px solid rgb(255, 68, 0);
+            background-color: rgb(231, 62, 0);
             color: #fff;
         }
     }
@@ -158,8 +160,8 @@
                     width: 250px;
                     height: 350px;
 
-                    .frente{
-                        .h3--javascript{
+                    .frente {
+                        .h3--javascript {
                             position: relative;
                             top: 5px;
                         }
@@ -178,9 +180,11 @@
 @media (min-width: 300px) and (max-width:800px) {
     .todosProyectos {
         height: 1500px;
+
         .proyectos {
             .card--proyectos {
                 flex-direction: column;
+
                 .card--htmlCss {
                     margin: 20px;
                 }
